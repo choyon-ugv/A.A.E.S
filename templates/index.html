@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Answer Evaluation System</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Change background color to white */
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column; /* Added to align content vertically */
+            background-color: #ffffff; /* Change background color to white */
+        }
+        
+        .content {
+            max-width: 800px;
+            padding: 40px;
+            background-color: #ffffff; /* Change background color to white */
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 40px; /* Added margin to separate from photo/gif section */
+        }
+        
+        .content h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .enter-button {
+            padding: 15px 30px;
+            background-color: #1cac78 ;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .enter-button:hover {
+            background-color:  #EE7214;
+        }
+        
+        .photo-gif {
+            max-width: 800px;
+            margin-bottom: 20px; /* Added margin to separate from content */
+        }
+        
+        /* .photo-gif img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transform: scale(2); /* Increases the size of the image by 2x */
+        } */
+
+
+        .photo-gif img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Photo or GIF Section -->
+        <div class="photo-gif">
+            <!-- Your photo or GIF here -->
+            <img src="https://cdn.dribbble.com/users/7813810/screenshots/18154060/media/c6d77dbb189056c12df964bf93266eed.gif" alt="Your Image">
+        </div>
+        
+        <!-- Content Section -->
+        <div class="content">
+            <h1>Automated Answer Evaluation System</h1>
+            <p>An Automated Answer Evaluation System (AAES) is a software application or system designed to assess and grade responses to questions or prompts automatically. These systems are commonly used in educational settings, particularly for online courses, assessments, and standardized tests.</p>
+            <a href="{% url 'take_test' %}" class="enter-button">Enter Exam</a>
+        </div>
+    </div>
+</body>
+</html>
